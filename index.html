@@ -20,8 +20,8 @@ body {font-family: "Lato", sans-serif;}
 /* Style the tab */
 .tab {
   float: left;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+  border: 1px solid rgb(24, 53, 218);
+  background-color: #dd2020;
   width: 30%;
   height: 300px;
 }
@@ -43,19 +43,19 @@ body {font-family: "Lato", sans-serif;}
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #ddd;
+  background-color: rgb(194, 47, 47);
 }
 
 /* Create an active/current "tab button" class */
 .tab button.active {
-  background-color: #ccc;
+  background-color: rgb(209, 21, 21);
 }
 
 /* Style the tab content */
 .tabcontent {
   float: left;
   padding: 0px 12px;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(182, 48, 48);
   width: 70%;
   border-left: none;
   height: 300px;
@@ -68,9 +68,9 @@ body {font-family: "Lato", sans-serif;}
 <p>Click on the buttons inside the tabbed menu:</p>
 
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">London</button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+  <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Family</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Life</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Schools</button>
 </div>
 
 <div id="London" class="tabcontent">
@@ -79,13 +79,13 @@ body {font-family: "Lato", sans-serif;}
 </div>
 
 <div id="Paris" class="tabcontent">
-  <h3>Paris</h3>
-  <p>Paris is the capital of France.</p> 
+  <h3>Life</h3>
+  <p> I was born in Saint Francis Hospital and raised over west side. Its hard to live a regular life cause your trying to be different everyone else.  </p> 
 </div>
 
 <div id="Tokyo" class="tabcontent">
-  <h3>Tokyo</h3>
-  <p>Tokyo is the capital of Japan.</p>
+  <h3>Schools</h3>
+  <p>The first place i went to was </p>
 </div>
 
 <script>
