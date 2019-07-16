@@ -1,111 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My First Navbar</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-
-<!DOCTYPE html>
-<html>
-<body style="background-color:powderblue;">
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-* {box-sizing: border-box}
-body {font-family: "Lato", sans-serif;}
-
-/* Style the tab */
-.tab {
-  float: left;
-  border: 1px solid rgb(24, 53, 218);
-  background-color: #dd2020;
-  width: 30%;
-  height: 300px;
-}
-
-/* Style the buttons inside the tab */
-.tab button {
-  display: block;
-  background-color: inherit;
-  color: black;
-  padding: 22px 16px;
-  width: 100%;
-  border: none;
-  outline: none;
-  text-align: left;
-  cursor: pointer;
-  transition: 0.3s;
-  font-size: 17px;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: rgb(194, 47, 47);
-}
-
-/* Create an active/current "tab button" class */
-.tab button.active {
-  background-color: rgb(209, 21, 21);
-}
-
-/* Style the tab content */
-.tabcontent {
-  float: left;
-  padding: 0px 12px;
-  border: 1px solid rgb(182, 48, 48);
-  width: 70%;
-  border-left: none;
-  height: 300px;
+#overflowTest {
+  background: #4CAF50;
+  color: white;
+  padding: 150px;
+  width: 50%;
+  height: 1000px;
+  overflow: scroll;
+  border: 1px solid #ccc;
 }
 </style>
 </head>
 <body>
 
+<div id="overflowTest">This text is really long and the height of its container is only 100 pixels. Therefore, a scrollbar is added to help the reader to scroll the content. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.</div>
 
-
-<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Family</button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')">Life</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Schools</button>
-</div>
-
-<div id="London" class="tabcontent">
-  <h3>Family</h3>
-  <p>My family are the best people i could ever had. They have always been there for me and i love them for that. I have never really have my father in my life but i think its best that way. I live with my mom my older sister my twin brother and my little sister also my little brother.</p>
-</div>
-
-<div id="Paris" class="tabcontent">
-  <h3>Life</h3>
-  <p> I was born in Saint Francis Hospital and raised over west side. Its hard to live a regular life cause your trying to be different everyone else.  </p> 
-</div>
-
-<div id="Tokyo" class="tabcontent">
-  <h3>Schools</h3>
-  <p>The first school i went to Ministry of caring Guardian angle
-     for daycare. I went to Kuumba Acadamey charter school all the way too 6th grade. I went to Gunning Bedford all the way too 8th grade. I am going to MOT all the too 12th grade. </p>
-</div>
-
-<script>
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-</script>
-   
 </body>
-</html> 
+</html>
